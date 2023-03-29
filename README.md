@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket. For demonstration purposes, I will be setting this ticketing system on a virtual machine using Microsoft Azure.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -18,8 +18,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
+- Microsoft Azure Account (If not setting up on your own computer)
+- ### [Instalation files]([www.google](https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)) 
 - Item 3
 - Item 4
 - Item 5
