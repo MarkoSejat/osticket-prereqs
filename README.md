@@ -64,12 +64,29 @@ Going back to the portal homescreen, we can click on the newly created VM and cl
    <img src="https://i.imgur.com/BSM74P9.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
   Click "OK" and Windows should start doing its installation process giving you a "Windows completed the requested changes" message. Now its time to test if the IIS is working correctly and we can do that by opening up a brower in our VM and typing in 127.0.0.1 which is our subnet. We will know its working if we can see the following screen: 
   <img src="https://i.imgur.com/GpwBnYg.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-  
+We can now move onto the next phase which will be installing our PHP manager. We can do this by going into the link of files I provided at the very start of this article and and accessing the file titled: PHPManagerForIIS_V1.5.0.msi
+  <br>
+<img src="https://i.imgur.com/3rmxiCs.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DtGHYPx.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+You can start installing the PHP manager by just pressing NEXT on all the prompts and allow for it to install. Once installed we can move onto our next step which is installing the Rewrite Module (rewrite_amd64_en-US.msi) from our set of files in the same link as before.
+<img src="https://i.imgur.com/RSEXuLG.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+As before, the install is very straight forward. Just keep pressing Next until the install is complete and then we should be able to move onto our next step which is creating a directory for  C:\PHP
 </p>
 <p>
+<img src="https://i.imgur.com/JmUoLXY.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+We can set up our PHP directory by simply going to our C: drive and creating a new folder and naming it PHP. Then we are going to download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP. 
+<img src="https://i.imgur.com/fed1edj.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+Once we have our file downloaded we can extract everything in the .zip file by right=clicking and selecting "extract all" and selecting the C:\PHP as shown above. Once we have this done, we can move onto our next step which is downloading VC_redist.x86.exe and proceeding with the install process as normal. This file is sometimes required by PHP in order to get it to work correctly so that is why we are installing it.
+<img src="https://i.imgur.com/8K0l7Dv.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+Once installed you should see the image above. Next we will move onto downloading MySQL 5.5.62 (mysql-5.5.62-win32.msi). When asked during installation, select typical install. Launch MySQL and select standard configuration. When you get to the password section, stop and take a look at the image below.
+<img src="https://i.imgur.com/GqbXAGh.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+For the purposes of this demonstration I am going to name the username "root" and set the password as Password1
+<br>
+At this point, the install will be setting up a database for the MySQL to store all the data such as user names. Once the install is completed just simply click "finish" and we can move onto the next step. We can now go to our search bar near our start menu and type in IIS and then right click it and then run it as administrator. 
+<img src="https://i.imgur.com/VyOnLri.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
