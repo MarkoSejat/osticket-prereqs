@@ -19,7 +19,7 @@ Going back to the portal homescreen, we can click on the newly created VM and cl
     <br> 
   <img src="https://i.imgur.com/BSM74P9.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
     <br>
-  Click "OK" and Windows should start doing its installation process giving you a "Windows completed the requested changes" message. Now its time to test if the IIS is working correctly and we can do that by opening up a brower in our VM and typing in 127.0.0.1 which is our subnet. We will know its working if we can see the following screen: 
+  Click "OK" and Windows should start doing its installation process giving you a "Windows completed the requested changes" message. Now its time to test if the IIS is working correctly and we can do that by opening up a brower in our VM and typing in 127.0.0.1 which is our local host/loopback address. We will know its working if we can see the following screen: 
     <br>
   <img src="https://i.imgur.com/GpwBnYg.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
   <br>
