@@ -109,10 +109,24 @@ From our Installation files on the google drive link, we can download osTicket-v
 <img src="https://i.imgur.com/jC72zNz.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 If we look at the image above, we are now going to rename that same "upload" folder to "osTicket" and then restart IIS. 
 <img src="https://i.imgur.com/puAspA5.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-Now if we go into our IIS main page and see where it says connections on the left we will see a tab. Click the vm-osticket then sites, default web site, osTicket and then click "Browse*:80 (http)" on the right under where it says browse folder. If this works you should have now successfully installed osTicket!
+Now if we go into our IIS main page and see where it says connections on the left we will see a tab. Click the vm-osticket then sites, default web site, osTicket and then click "Browse*:80 (http)" on the right under where it says browse folder. Now osTicket has been installed!
 </p>
 <br>
 <img src="https://i.imgur.com/Xv4AN3k.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+Looking at the photo above you will notice that some of the extensions have a red X next to them because they have no been enabled yet through osTicket. That is going to be the next step to getting everything up and running. We now need to go back into our IIS.
+<img src="https://i.imgur.com/1nCOB1H.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+Once we are back into IIS we can go back to where it says connection, go to our vm-osticket, click sites, default website, osTicket and click on PHP Manager.
+<img src="https://i.imgur.com/IkOsHEA.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+We then have to click on "Enable or disable an extension" under where it says PHP Extensions as shown above. After that make sure that the following extensions are enabled: Enable: 
+<br>
+php_imap.dll 
+<br>
+Enable: php_intl.dll
+<br>
+Enable: php_opcache.dll
+<br>
+<img src="https://i.imgur.com/p0I4MwO.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+
 
   
 <br />
