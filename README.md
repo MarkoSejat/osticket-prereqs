@@ -57,6 +57,14 @@ We will set up our VM by clicking "Virtual Machines" from the portal homescreen 
 Going back to the portal homescreen, we can click on the newly created VM and clicking on it. From there we should be taken to the screen above where we will need to copy the public IP address for our newly created virtual machine. From there we will need to login into it. Since I am using a Windows desktop PC I will click on my windows search tab by my start menu and type in "Remote Desktop Connection" where I will paste the IP that we copied from the VM. After that I will be asked to login using my account name and password that we set up when we set up the VM. 
   <img src="https://i.imgur.com/8IIPKHY.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/g7KzmPn.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <br>
+  From here we will be logged into our VM where we can move onto the next step which is install/enabling Windows IIS with CGI. We can do this by going into the VM desktop that we created and clicking the search by our start menu and typing run. Once in the run app write "control" which will access our control panel and clicking "PROGRAMS".
+   <img src="https://i.imgur.com/EDf5arH.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  From here You will see it says "Programs and features" and you can click "Turn Windows features on or off". From here you can scroll down to "Internet Information Service" and you can select everything that I have selected in the picture below. Make sure you turn on CGI! CGI will enable us to install PHP Manager for osTicket and its basically a back-end programming language which osTicket needs in order to work properly. 
+   <img src="https://i.imgur.com/BSM74P9.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  Click "OK" and Windows should start doing its installation process giving you a "Windows completed the requested changes" message. Now its time to test if the IIS is working correctly and we can do that by opening up a brower in our VM and typing in 127.0.0.1 which is our subnet. We will know its working if we can see the following screen: 
+  <img src="https://i.imgur.com/GpwBnYg.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  
 </p>
 <p>
 
