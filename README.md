@@ -1,11 +1,56 @@
-  <br>
+<p align="center">
+<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+</p>
+
+<h1>osTicket - Prerequisites and Installation</h1>
+This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+
+
+<h2>Video Demonstration</h2>
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Internet Information Services (IIS)
+
+<h2>Operating Systems Used </h2>
+
+- Windows 10</b> (21H2)
+
+<h2>List of Prerequisites</h2>
+
+- Microsoft Azure account
+- Installation files: https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+
+<h2>Installation Steps</h2>
+<br>
 </p>
 <br />
-
-
-<p>
-<img src="https://i.imgur.com/O7Ged9k.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-  <br>
+Our first steps are to set up an account with Microsoft Azure. We can set up using a free-trial account. 
+<img src="https://i.imgur.com/96Kqktg.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br>
+<img src="https://i.imgur.com/daFK83r.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br>
+The first thing we will see is our Azure Portal home screen. From here we have the freedom to do many things but for this project we are going to start off by creating a resource group. We can begin by clicking on the "resource group" icon and clicking "create" in the next screen. 
+<br>
+<img src="https://i.imgur.com/1TEfRp2.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br>
+We should see the following screen. We can name our resource group "RS-osTicket" and then selecting our region. Make sure you remember which region you set up your resource group in. I set mine up using US West 3 in the example above. Make sure everything you do from here on out is set-up for the same region. 
+<br>
+<img src="https://i.imgur.com/n5xzLGO.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br>
+Our next step is going to be to set up our Virtual Machine. The virtual machine is essentially a simulation of a computer using the Azure server to let us perform tasks as if it were being done on our desktop. We will begin by click the "Virtual-Machines" icon in our portal homescreen and then selecting "Create" from the top left and selecting "Azure Virtual Machine"
+<br>
+<img src="https://i.imgur.com/WpeOrlF.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br>
+From here we can begin our VM set up. The first thing we have to do is make sure that our resourve group is the one that we created. In my example it is RS-osTicket. I set my image to Windows 10 as that is the OS that I want my VM to have. I also set my security to standard and made sure that my region is the same as that of my resourve group. 
+<br>
+<img src="https://i.imgur.com/2KcjAhN.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br>
+Next we want to make sure that our username and password is set-up. For this lab I just simply used the name "labuser" but you can use whatever you want. Make sure you remember your password as well. Check the box below and click Create. It should then begin to validate and you will have to click create once more.
+<br>
+<img src="https://i.imgur.com/s4c3tAQ.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br>
 Going back to the portal homescreen, we can click on the newly created VM and clicking on it. From there we should be taken to the screen above where we will need to copy the public IP address for our newly created virtual machine. From there we will need to login into it. Since I am using a Windows desktop PC I will click on my windows search tab by my start menu and type in "Remote Desktop Connection" where I will paste the IP that we copied from the VM. After that I will be asked to login using my account name and password that we set up when we set up the VM. 
     <br>
   <img src="https://i.imgur.com/8IIPKHY.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
